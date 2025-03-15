@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce App</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+  <header>
+    <h1>eCommerce Demo</h1>
+    <!-- Greeting container on the right -->
+    <div id="userGreeting" class="user-greeting"></div>
+  </header>
+  <div class="container">
+    <!-- Notification area (you can update this dynamically) -->
+    <div id="notification" class="notification" style="display:none;"></div>
+
+    <!-- User Authentication -->
+    <section id="authentication">
+      <h2>User Authentication</h2>
+      <div id="auth">
+        <h3>Register</h3>
+        <form id="registerForm">
+          <input type="text" id="registerUsername" placeholder="Username" required>
+          <input type="password" id="registerPassword" placeholder="Password" required>
+          <button type="submit">Register</button>
+        </form>
+  
+        <h3>Login</h3>
+        <form id="loginForm">
+          <input type="text" id="loginUsername" placeholder="Username" required>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Product Management -->
+    <section id="productManagement">
+      <h2>Product Management</h2>
+      <form id="productForm">
+        <input type="text" id="productName" placeholder="Product Name" required>
+        <input type="number" id="productPrice" placeholder="Product Price" required>
+        <button type="submit">Add Product</button>
+      </form>
+      <ul id="productList"></ul>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section id="shoppingCart">
+      <h2>Shopping Cart</h2>
+      <ul id="cart"></ul>
+      <p>Total: <span id="total">0</span></p>
+    </section>
+  </div>
+  <script src="public/app.js"></script>
+</body>
+</html>
